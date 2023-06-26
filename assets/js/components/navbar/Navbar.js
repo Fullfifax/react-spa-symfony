@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './navbar.css';
 
 const Navbar = () => {
     const listItemClassName = 'list-unstyled';
     const linkClassName = 'mx-4 text-decoration-none';
 
     return (
-        <nav className='align-items-center d-flex justify-content-around py-4'>
-            <div>
-                <Link className={linkClassName + ' display-4'} to="/">DTC</Link>
+        <nav className='align-items-center d-flex justify-content-around py-2'>
+            <div className='logo'>
+                <Link className={linkClassName + ' display-5'} to="/">DTC</Link>
             </div>
             <div>
                 <ul className='d-flex mt-3'>

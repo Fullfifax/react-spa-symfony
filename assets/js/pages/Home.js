@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import Jumbotron from '../components/Jumbotron/Jumbotron';
+import Jumbotron from '../components/jumbotron/Jumbotron';
 import ContainerLayout from '../layouts/ContainerLayout';
 
 class Home extends Component {

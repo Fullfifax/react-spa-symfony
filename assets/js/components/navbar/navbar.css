@@ -1,0 +1,13 @@
+nav {
+    background-color: #122969;
+}
+
+nav .logo a {
+    color: #e57c23;
+    font-weight: bold;
+}
+
+nav div ul li a {
+    color: #ffffff;
+    font-weight: bold;
+}
