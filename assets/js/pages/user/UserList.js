@@ -1,6 +1,6 @@
 import React,{ useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
-import Layout from "../../components/layouts/Layout"
+import ContainerLayout from "../../components/layouts/ContainerLayout"
 import Swal from 'sweetalert2'
 import axios from 'axios';
  
@@ -55,7 +55,7 @@ function UserList() {
     }
   
     return (
-        <Layout>
+        <ContainerLayout>
            <div className="container">
             <h2 className="text-center mt-5 mb-3">Users List</h2>
                 <div className="card">
@@ -112,7 +112,7 @@ function UserList() {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </ContainerLayout>
     );
 }
   

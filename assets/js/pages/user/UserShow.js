@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Link, useParams } from "react-router-dom";
-import Layout from "../../components/layouts/Layout"
+import ContainerLayout from "../../components/layouts/ContainerLayout"
 import axios from 'axios';
   
 function UserShow() {
@@ -17,7 +17,7 @@ function UserShow() {
     }, [])
   
     return (
-        <Layout>
+        <ContainerLayout>
            <div className="container">
             <h2 className="text-center mt-5 mb-3">Show User</h2>
                 <div className="card">
@@ -41,7 +41,7 @@ function UserShow() {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </ContainerLayout>
     );
 }
   

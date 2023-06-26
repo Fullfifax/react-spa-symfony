@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from "react-router-dom";
-import Layout from "../../components/layouts/Layout";
+import ContainerLayout from "../../components/layouts/ContainerLayout";
 import Swal from 'sweetalert2';
 import axios from 'axios';
 
@@ -47,7 +47,7 @@ function UserCreate() {
     }
   
     return (
-        <Layout>
+        <ContainerLayout>
             <div className="container">
                 <h2 className="text-center mt-5 mb-3">Create New User</h2>
                 <div className="card">
@@ -120,7 +120,7 @@ function UserCreate() {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </ContainerLayout>
     );
 }
   
