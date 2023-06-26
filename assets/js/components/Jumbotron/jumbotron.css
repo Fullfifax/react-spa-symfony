@@ -1,0 +1,12 @@
+.text-blue, h2 .text-orange {
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+.text-blue {
+    color: #122969;
+}
+
+h2 .text-orange {
+    color: #e57c23;
+}

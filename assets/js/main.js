@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import UserCreate from './pages/user/UserCreate';
 import UserEdit from './pages/user/UserEdit';
@@ -9,6 +10,7 @@ import UserShow from './pages/user/UserShow';
 
 createRoot(document.getElementById('root')).render(
     <Router>
+        <Navbar/>
         <Routes>
             <Route exact path="/" element={<Home/>} />
             <Route path="/user" element={<UserList/>} />

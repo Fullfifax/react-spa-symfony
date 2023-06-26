@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import Jumbotron from '../components/Jumbotron/Jumbotron';
 import ContainerLayout from '../layouts/ContainerLayout';
 
 class Home extends Component {
     
     render() {
         return (
-            <ContainerLayout>
-                <Link to="/user">USER CRUD</Link>
-            </ContainerLayout>
+            <>
+                <Jumbotron/>
+                <ContainerLayout>
+                    <Link to="/user">USER CRUD</Link>
+                </ContainerLayout>
+            </>
         )
     }
 
