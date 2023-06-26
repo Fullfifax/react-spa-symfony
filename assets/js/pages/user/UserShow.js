@@ -24,7 +24,7 @@ function UserShow() {
                     <div className="card-header">
                         <Link 
                             className="btn btn-outline-info float-right"
-                            to="/"> View All Users
+                            to="/user"> View All Users
                         </Link>
                     </div>
                     <div className="card-body">

@@ -5,19 +5,19 @@ import Swal from 'sweetalert2'
 import axios from 'axios';
   
 function UserEdit() {
-    const [id, setId] = useState(useParams().id)
+    const [id] = useParams().id
     const [name, setName] = useState('');
     const [firstname, setFirstname] = useState('');
     const [age, setAge] = useState('');
     const [cin, setCin] = useState('');
     const [address, setAddress] = useState('');
     const [isSaving, setIsSaving] = useState(false);
-  
       
     useEffect(() => {
-        axios.get(`api/user/${id}`)
+        axios.get(`/api/user/${id}`)
         .then(function (response) {
             let user = response.data
+            console.log(user.name)
             setName(user.name)
             setFirstname(user.firstname)
             setAge(user.age)
@@ -33,7 +33,7 @@ function UserEdit() {
             })
         })
           
-    }, [])
+    }, [id])
   
   
     const handleSave = () => {
@@ -83,7 +83,7 @@ function UserEdit() {
                             <label htmlFor="name">Name</label>
                             <input 
                                 onChange={(event)=>{setName(event.target.value)}}
-                                value={name}
+                                value={name || ''}
                                 type="text"
                                 className="form-control"
                                 id="name"
@@ -93,7 +93,7 @@ function UserEdit() {
                             <label htmlFor="firstname">Firstname</label>
                             <input 
                                 onChange={(event)=>{setFirstname(event.target.value)}}
-                                value={firstname}
+                                value={firstname || ''}
                                 type="text"
                                 className="form-control"
                                 id="firstname"
@@ -103,7 +103,7 @@ function UserEdit() {
                             <label htmlFor="cin">CIN</label>
                             <input 
                                 onChange={(event)=>{setCin(event.target.value)}}
-                                value={cin}
+                                value={cin || ''}
                                 type="text"
                                 className="form-control"
                                 id="cin"
@@ -113,7 +113,7 @@ function UserEdit() {
                             <label htmlFor="age">Age</label>
                             <input 
                                 onChange={(event)=>{setAge(event.target.value)}}
-                                value={age}
+                                value={age || ''}
                                 type="text"
                                 className="form-control"
                                 id="age"
@@ -123,7 +123,7 @@ function UserEdit() {
                             <label htmlFor="address">Address</label>
                             <input 
                                 onChange={(event)=>{setAddress(event.target.value)}}
-                                value={address}
+                                value={address || ''}
                                 type="text"
                                 className="form-control"
                                 id="address"
