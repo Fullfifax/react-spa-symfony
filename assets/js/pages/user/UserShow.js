@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Link, useParams } from "react-router-dom";
-import ContainerLayout from "../../components/layouts/ContainerLayout"
+import ContainerLayout from "../../layouts/ContainerLayout"
 import axios from 'axios';
   
 function UserShow() {

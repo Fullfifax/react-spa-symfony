@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from "react-router-dom";
-import ContainerLayout from "../../components/layouts/ContainerLayout";
+import ContainerLayout from "../../layouts/ContainerLayout";
 import Swal from 'sweetalert2';
 import axios from 'axios';
 

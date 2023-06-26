@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import ContainerLayout from '../components/layouts/ContainerLayout';
+import ContainerLayout from '../layouts/ContainerLayout';
 
 class Home extends Component {
     
