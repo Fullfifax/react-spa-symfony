@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './card.css';
 
 const Card = (props) => {
-    const { imageUrl, title, description, buttonText, linkUrl, readMoreLink } = props;
+    const { imageUrl, title, description, buttonText, linkUrl } = props;
 
     return (
         <div className="bg-blue card text-center w-25">
@@ -14,7 +14,6 @@ const Card = (props) => {
                     <p className="card-text">{description}</p>
                 </div>
             </Link>
-            <Link to={readMoreLink} className="btn btn-primary">{buttonText}</Link>
         </div>
     );
 };

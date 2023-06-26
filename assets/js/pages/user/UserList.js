@@ -61,7 +61,7 @@ function UserList() {
     return (
         <ContainerLayout>
            <div className="container">
-            <h2 className="text-center mt-5 mb-3">Users List</h2>
+            <h2 className="text-center mt-5 mb-3 custom-font text-orange">Users List</h2>
                 <div className="card">
                     <div className="card-header">
                         <Link 
@@ -91,7 +91,7 @@ function UserList() {
                                             <td>{user.age}</td>
                                             <td>{user.cin}</td>
                                             <td>{user.address}</td>
-                                            <td>
+                                            <td className='d-flex justify-content-center'>
                                                 <Link
                                                     to={`/user/show/${user.id}`}
                                                     className="btn btn-outline-info mx-1">

@@ -1,10 +1,10 @@
 nav {
     background-color: #122969;
+    font-family: 'AMCAP Eternal', sans-serif;
 }
 
 nav .logo a {
     color: #e57c23;
-    font-weight: bold;
 }
 
 nav div ul li a {

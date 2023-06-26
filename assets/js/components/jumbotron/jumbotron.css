@@ -1,6 +1,5 @@
-.text-blue, p .text-orange, h2 .text-orange {
-    font-family: fantasy;
-    font-weight: bold;
+.text-blue, p .text-orange, h2 .text-orange, p {
+    font-family: 'AMCAP Eternal', sans-serif;
 }
 
 .text-blue {

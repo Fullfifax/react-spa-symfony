@@ -19,7 +19,7 @@ function UserShow() {
     return (
         <ContainerLayout>
            <div className="container">
-            <h2 className="text-center mt-5 mb-3">Show User</h2>
+            <h2 className="text-center mt-5 mb-3 custom-font text-orange">Show User</h2>
                 <div className="card">
                     <div className="card-header">
                         <Link 

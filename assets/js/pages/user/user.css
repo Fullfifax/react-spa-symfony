@@ -2,3 +2,11 @@
     height: 30px;
     width: 30px;
 }
+
+.custom-font {
+    font-family: 'AMCAP Eternal', sans-serif;
+}
+
+.text-orange {
+    color: #e57c23;
+}
