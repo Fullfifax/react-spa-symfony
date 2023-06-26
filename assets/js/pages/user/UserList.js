@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import ContainerLayout from "../../layouts/ContainerLayout"
 import Swal from 'sweetalert2'
 import axios from 'axios';
- 
+import './user.css';
+import showIcon from '../../../icons/show.png';
+import editIcon from '../../../icons/edit.png';
+import deleteIcon from '../../../icons/delete.png';
+
 function UserList() {
     const  [userList, setUserList] = useState([])
   
@@ -91,17 +95,17 @@ function UserList() {
                                                 <Link
                                                     to={`/user/show/${user.id}`}
                                                     className="btn btn-outline-info mx-1">
-                                                    Show
+                                                    <img className="custom-icon" src={showIcon} alt="show"/>
                                                 </Link>
                                                 <Link
                                                     className="btn btn-outline-success mx-1"
                                                     to={`/user/edit/${user.id}`}>
-                                                    Edit
+                                                    <img className="custom-icon" src={editIcon} alt="edit"/>
                                                 </Link>
                                                 <button 
                                                     onClick={()=>handleDelete(user.id)}
                                                     className="btn btn-outline-danger mx-1">
-                                                    Delete
+                                                    <img className="custom-icon" src={deleteIcon} alt="delete"/>
                                                 </button>
                                             </td>
                                         </tr>
