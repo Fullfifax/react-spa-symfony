@@ -18,27 +18,25 @@ function UserShow() {
   
     return (
         <ContainerLayout>
-           <div className="container">
-            <h2 className="text-center mt-5 mb-3 custom-font text-orange">Show User</h2>
-                <div className="card">
-                    <div className="card-header">
-                        <Link 
-                            className="btn btn-outline-info float-right"
-                            to="/user"> View All Users
-                        </Link>
-                    </div>
-                    <div className="card-body">
-                        <b className="text-muted">Name:</b>
-                        <p>{user.name}</p>
-                        <b className="text-muted">Firstname:</b>
-                        <p>{user.firstname}</p>
-                        <b className="text-muted">Age:</b>
-                        <p>{user.age}</p>
-                        <b className="text-muted">CIN:</b>
-                        <p>{user.cin}</p>
-                        <b className="text-muted">Address:</b>
-                        <p>{user.address}</p>
-                    </div>
+            <h2 className="text-center mt-5 mb-3 custom-font-amcap text-orange">Show User</h2>
+            <div className="card">
+                <div className="card-header">
+                    <Link 
+                        className="btn btn-darkblue float-end"
+                        to="/user"> View All Users
+                    </Link>
+                </div>
+                <div className="card-body">
+                    <b className="text-muted">Name:</b>
+                    <p>{user.name}</p>
+                    <b className="text-muted">Firstname:</b>
+                    <p>{user.firstname}</p>
+                    <b className="text-muted">Age:</b>
+                    <p>{user.age}</p>
+                    <b className="text-muted">CIN:</b>
+                    <p>{user.cin}</p>
+                    <b className="text-muted">Address:</b>
+                    <p>{user.address}</p>
                 </div>
             </div>
         </ContainerLayout>

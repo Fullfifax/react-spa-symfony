@@ -69,11 +69,11 @@ function UserEdit() {
     return (
         <ContainerLayout>
             <div className="container">
-                <h2 className="text-center mt-5 mb-3 custom-font text-orange">Edit User</h2>
+                <h2 className="text-center mt-5 mb-3 custom-font-amcap text-orange">Edit User</h2>
                 <div className="card">
                     <div className="card-header">
                         <Link 
-                            className="btn btn-outline-info float-right"
+                            className="btn btn-darkblue float-end"
                             to="/user">View All Users
                         </Link>
                     </div>
@@ -133,7 +133,7 @@ function UserEdit() {
                             disabled={isSaving}
                             onClick={handleSave} 
                             type="button"
-                            className="btn btn-outline-primary mt-3">
+                            className="btn btn-orange w-100 mt-3">
                             Save User
                         </button>
                     </form>

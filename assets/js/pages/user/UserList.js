@@ -7,6 +7,8 @@ import './user.css';
 import showIcon from '../../../icons/show.png';
 import editIcon from '../../../icons/edit.png';
 import deleteIcon from '../../../icons/delete.png';
+import backIcon from '../../../icons/back.png';
+import addIcon from '../../../icons/add.png';
 
 function UserList() {
     const  [userList, setUserList] = useState([])
@@ -61,19 +63,24 @@ function UserList() {
     return (
         <ContainerLayout>
            <div className="container">
-            <h2 className="text-center mt-5 mb-3 custom-font text-orange">Users List</h2>
+            <h2 className="text-center mt-5 mb-3 custom-font-amcap text-orange">Users List</h2>
                 <div className="card">
                     <div className="card-header">
                         <Link 
-                            className="btn btn-outline-primary"
-                            to="/user/create">Create New User
+                            to="/">
+                                <img src={backIcon} width="65px" height="65px" alt='back' />
+                        </Link>
+                        <Link 
+                            className="float-end"
+                            to="/user/create">
+                                <img src={addIcon} width="65px" height="65px" alt='add' />
                         </Link>
                     </div>
                     <div className="card-body">
               
                         <table className="table table-bordered">
                             <thead>
-                                <tr>
+                                <tr className='text-orange'>
                                     <th>Name</th>
                                     <th>Description</th>
                                     <th>Age</th>

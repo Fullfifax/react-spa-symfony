@@ -3,10 +3,20 @@
     width: 30px;
 }
 
-.custom-font {
+.custom-font-amcap {
     font-family: 'AMCAP Eternal', sans-serif;
 }
 
 .text-orange {
     color: #e57c23;
+}
+
+.btn-darkblue {
+    background-color: #122969 !important;
+    color: #ffffff !important;
+}
+
+.btn-orange {
+    background-color: #e57c23 !important;
+    color: #ffffff !important;
 }
