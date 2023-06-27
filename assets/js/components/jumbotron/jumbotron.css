@@ -1,5 +1,9 @@
-.text-blue, p .text-orange, h2 .text-orange, p {
+.text-blue, p .text-orange, h2 .text-orange {
     font-family: 'AMCAP Eternal', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
 }
 
 .text-blue {
