@@ -6,7 +6,7 @@ const Card = (props) => {
     const { imageUrl, title, description, buttonText, linkUrl } = props;
 
     return (
-        <div className="bg-blue card text-center w-25">
+        <div className="bg-blue card card-animated text-center w-25">
             <Link className="text-decoration-none" to={linkUrl}>
                 <img src={imageUrl} className="card-img-top" alt="Card Image" />
                 <div className="card-body text-white">

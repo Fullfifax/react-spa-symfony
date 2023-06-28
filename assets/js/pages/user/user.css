@@ -20,3 +20,12 @@
     background-color: #e57c23 !important;
     color: #ffffff !important;
 }
+
+.custom-icon-animated {
+    transition: transform .6s;
+}
+
+.custom-icon-animated:hover {
+    animation: 3s linear .1s colorIt;
+    transform: scale(1.2);
+}

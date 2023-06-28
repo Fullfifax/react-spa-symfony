@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import ContainerLayout from "../../layouts/ContainerLayout"
 import Swal from 'sweetalert2'
 import axios from 'axios';
+import backIcon from '../../../icons/back.png';
   
 function UserEdit() {
     const [id] = useParams().id
@@ -71,9 +72,8 @@ function UserEdit() {
             <h2 className="text-center mt-5 mb-3 custom-font-amcap text-orange">Edit User</h2>
             <div className="card">
                 <div className="card-header">
-                    <Link 
-                        className="btn btn-darkblue float-end"
-                        to="/user">View All Users
+                    <Link to="/user">
+                        <img className="custom-icon-animated" src={backIcon} width="65px" height="65px" alt='back' />
                     </Link>
                 </div>
                 <div className="card-body">

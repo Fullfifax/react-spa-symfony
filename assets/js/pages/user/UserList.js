@@ -67,12 +67,12 @@ function UserList() {
                 <div className="card-header">
                     <Link 
                         to="/">
-                            <img src={backIcon} width="65px" height="65px" alt='back' />
+                            <img className="custom-icon-animated" src={backIcon} width="65px" height="65px" alt='back' />
                     </Link>
                     <Link 
                         className="float-end"
                         to="/user/create">
-                            <img src={addIcon} width="65px" height="65px" alt='add' />
+                            <img className="custom-icon-animated" src={addIcon} width="65px" height="65px" alt='add' />
                     </Link>
                 </div>
                 <div className="card-body">
