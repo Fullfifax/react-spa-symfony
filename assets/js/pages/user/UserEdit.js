@@ -23,7 +23,6 @@ function UserEdit() {
             setAge(user.age)
             setCin(user.cin)
             setAddress(user.address)
-            console.log(user)
         })
         .catch(function (error) {
             Swal.fire({
