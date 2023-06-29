@@ -6,7 +6,7 @@ import axios from 'axios';
 import backIcon from '../../../icons/back.png';
   
 function UserEdit() {
-    const [id] = useParams().id
+    const [id] = useState(useParams().id)
     const [name, setName] = useState('');
     const [firstname, setFirstname] = useState('');
     const [age, setAge] = useState('');
@@ -18,12 +18,12 @@ function UserEdit() {
         axios.get(`/api/user/${id}`)
         .then(function (response) {
             let user = response.data
-            console.log(user.name)
             setName(user.name)
             setFirstname(user.firstname)
             setAge(user.age)
             setCin(user.cin)
             setAddress(user.address)
+            console.log(user)
         })
         .catch(function (error) {
             Swal.fire({
