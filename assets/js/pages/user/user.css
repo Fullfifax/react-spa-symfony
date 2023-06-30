@@ -1,16 +1,3 @@
-.custom-icon {
-    height: 30px;
-    width: 30px;
-}
-
-.custom-font-amcap {
-    font-family: 'AMCAP Eternal', sans-serif;
-}
-
-.text-orange {
-    color: #e57c23;
-}
-
 .btn-darkblue {
     background-color: #122969 !important;
     color: #ffffff !important;
@@ -21,6 +8,15 @@
     color: #ffffff !important;
 }
 
+.custom-font-amcap {
+    font-family: 'AMCAP Eternal', sans-serif;
+}
+
+.custom-icon {
+    height: 30px;
+    width: 30px;
+}
+
 .custom-icon-animated {
     transition: transform .6s;
 }
@@ -28,4 +24,8 @@
 .custom-icon-animated:hover {
     animation: 3s linear .1s colorIt;
     transform: scale(1.2);
+}
+
+.text-orange {
+    color: #e57c23;
 }

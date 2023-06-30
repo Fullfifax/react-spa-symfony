@@ -10,7 +10,7 @@ const Card = (props) => {
             <Link className="text-decoration-none" to={linkUrl}>
                 <img src={imageUrl} className="card-img-top" alt="Card Image" />
                 <div className="card-body text-white">
-                    <h5 className="card-title">{title}</h5>
+                    <h5 className="card-title custom-font-amcap">{title}</h5>
                     <p className="card-text">{description}</p>
                 </div>
             </Link>

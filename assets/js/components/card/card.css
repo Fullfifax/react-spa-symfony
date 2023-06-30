@@ -3,10 +3,6 @@
     border: none;
 }
 
-h5 {
-    font-family: 'AMCAP Eternal', sans-serif;
-}
-
 .card-animated {
     transition: transform .6s;
 }
@@ -14,4 +10,8 @@ h5 {
 .card-animated:hover {
     animation: 3s linear .1s colorIt;
     transform: scale(1.05);
+}
+
+.custom-font-amcap {
+    font-family: 'AMCAP Eternal', sans-serif;
 }

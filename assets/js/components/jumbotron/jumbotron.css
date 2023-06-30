@@ -1,8 +1,8 @@
-.text-blue, p .text-orange, h2 .text-orange {
+.custom-font-amcap {
     font-family: 'AMCAP Eternal', sans-serif;
 }
 
-p {
+.custom-font-poppins {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -10,6 +10,6 @@ p {
     color: #122969;
 }
 
-h2 .text-orange, p .text-orange {
+.text-orange {
     color: #e57c23;
 }

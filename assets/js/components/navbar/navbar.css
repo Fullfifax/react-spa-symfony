@@ -1,13 +1,19 @@
-nav {
+.bg-nav-blue {
     background-color: #122969;
+}
+
+.custom-font-amcap {
     font-family: 'AMCAP Eternal', sans-serif;
 }
 
-nav .logo a {
+.custom-font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-orange {
     color: #e57c23;
 }
 
-nav div ul li a {
+.text-white {
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
 }
