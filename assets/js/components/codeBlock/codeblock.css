@@ -1,0 +1,27 @@
+.copy-button {
+    background-color: #e57c23;
+    border: none;
+    color: #ffffff;
+    font-size: 0.8em;
+}
+
+.copy-button:hover {
+    opacity: 0.7;
+}
+
+.code-block {
+    width: 75%;
+}
+
+.code-block-content {
+    background-color: #122969;
+    color: #ffffff;
+    overflow-x: auto;
+}
+
+.code-block-header {
+    background-color: #e57c23;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.2em;
+}
