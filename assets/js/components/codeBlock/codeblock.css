@@ -17,6 +17,7 @@
     background-color: #122969;
     color: #ffffff;
     overflow-x: auto;
+    padding: 1em;
 }
 
 .code-block-header {
