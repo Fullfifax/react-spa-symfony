@@ -45,12 +45,16 @@ const InstallSymfony = () => {
         # MAILER_DSN=null://null
         ###< symfony/mailer ###
     `;
+    const codeSnippetCreateDatabase = `php bin/console doctrine:database:create`;
 
     return <>
         <CodeBlock code={codeSnippetInstallSymfony} />
         <br/>
-        <p>Configure your .env.local file (for development)</p>
+        <p>Configure your .env.local file</p>
         <CodeBlock code={codeSnippetConfigureEnv} />
+        <br/>
+        <p>Create the database once you configured your .env.local file</p>
+        <CodeBlock code={codeSnippetCreateDatabase} />
     </>
 };
 
