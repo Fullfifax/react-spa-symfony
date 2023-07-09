@@ -4,7 +4,7 @@ import './navbar.css';
 
 const Navbar = () => {
     const listItemClassName = 'list-unstyled';
-    const linkClassName = 'custom-font-poppins mx-4 text-decoration-none';
+    const linkClassName = 'custom-font-poppins link-hover mx-4 text-decoration-none';
     const linkColor = ' text-white';
 
     return (
@@ -25,7 +25,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div>
+            <div className='link-hover'>
                 <Link className={linkClassName + linkColor} to="/">Buy me a coffee</Link>
             </div>
         </nav>
