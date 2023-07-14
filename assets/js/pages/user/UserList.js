@@ -11,6 +11,7 @@ import deleteIcon from '../../../icons/delete.png';
 import backIcon from '../../../icons/back.png';
 import addIcon from '../../../icons/add.png';
 import InstallSymfony from '../../components/codeSnippets/installSymfony/InstallSymfony';
+import BasicCrud from '../../components/codeSnippets/basicCrud/BasicCrud';
 
 function UserList() {
     const  [userList, setUserList] = useState([])
@@ -126,6 +127,8 @@ function UserList() {
             <CodeContainerLayout>
                 <p>Create a Symfony project</p>
                 <InstallSymfony/>
+                <br/>
+                <BasicCrud />
             </CodeContainerLayout>
         </ContainerLayout>
     );
