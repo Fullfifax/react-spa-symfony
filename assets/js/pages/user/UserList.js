@@ -125,9 +125,7 @@ function UserList() {
                 </div>
             </div>
             <CodeContainerLayout>
-                <p>Create a Symfony project</p>
                 <InstallSymfony/>
-                <br/>
                 <BasicCrud />
             </CodeContainerLayout>
         </ContainerLayout>

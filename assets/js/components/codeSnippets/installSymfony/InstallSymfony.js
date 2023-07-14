@@ -48,13 +48,9 @@ const InstallSymfony = () => {
     const codeSnippetCreateDatabase = `php bin/console doctrine:database:create`;
 
     return <>
-        <CodeBlock code={codeSnippetInstallSymfony} />
-        <br/>
-        <p>Configure your .env.local file</p>
-        <CodeBlock code={codeSnippetConfigureEnv} />
-        <br/>
-        <p>Create the database once you configured your .env.local file</p>
-        <CodeBlock code={codeSnippetCreateDatabase} />
+        <CodeBlock code={codeSnippetInstallSymfony} paragraph={"Create a Symfony project"} />
+        <CodeBlock code={codeSnippetConfigureEnv} paragraph={"Configure your .env.local file"} />
+        <CodeBlock code={codeSnippetCreateDatabase} paragraph={"Create the database once you configured your .env.local file"} />
     </>
 };
 
